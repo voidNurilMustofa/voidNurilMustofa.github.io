@@ -235,7 +235,7 @@ main {
   }
 
   .img-ava {
-    width: 290px;
+    width: 250px;
   }
 
   .col-bio h1 {
@@ -285,5 +285,9 @@ main {
   .col-bio p {
     line-height: 23px;
     letter-spacing: 1px;
+  }
+
+  .img-ava{
+
   }
 }
