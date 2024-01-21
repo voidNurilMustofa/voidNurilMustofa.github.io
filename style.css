@@ -27,12 +27,12 @@ nav {
   position: fixed;
   padding: 10px 50px;
   /* border-bottom: 2px solid #000e0f; */
- 
+
   width: 100%;
   z-index: 9999;
 }
 
-.nav-box-shadow{
+.nav-box-shadow {
   box-shadow: 7px 8px 19px #001113;
   background-image: linear-gradient(to right, #0e1114, #00181a);
 }
@@ -116,7 +116,7 @@ main {
   align-items: center;
 }
 
-.btn-contact {
+.btn-resume {
   color: var(--success);
   background-color: var(--warning);
   width: 100px;
@@ -126,7 +126,7 @@ main {
   cursor: pointer;
 }
 
-.btn-contact:hover {
+.btn-resume:hover {
   color: var(--secondary);
   background-color: #018086;
   transition: all ease-in-out 0.15s;
@@ -154,9 +154,23 @@ main {
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--secondary);
-  filter: saturate(80%);
-  filter: brightness(115%);
+  /* filter: saturate(80%); */
+  /* filter: brightness(115%); */
   box-shadow: 7px 8px 19px #001011;
+}
+
+.social-media {
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.social-media svg{
+  fill: #8f97aa;
+}
+
+.social-media svg:hover{
+  fill: #C5D1ED;
+  transition: ease-in-out 0.2s;
 }
 
 .col-skill ul li {
@@ -229,13 +243,23 @@ main {
 }
 
 @media only screen and (max-width: 576px) {
+  main{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .row {
     flex-direction: column-reverse;
     padding: 10px 20px;
   }
 
+  .social-media {
+    flex-direction: row;
+    padding-bottom: 0px;
+  }
+
   .col-ava h1 {
     text-align: center;
+    padding: 0;
   }
 
   .col-ava p {
