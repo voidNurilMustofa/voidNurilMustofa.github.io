@@ -16,7 +16,7 @@ menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
 });
 
-const btnContact = document.getElementsByClassName(".btn-contatct")[0];
-btnContact.addEventListener("click", ()=>{
+// const btnContact = document.getElementsByClassName(".btn-contatct")[0];
+// btnContact.addEventListener("click", ()=>{
   
-});
+// });
