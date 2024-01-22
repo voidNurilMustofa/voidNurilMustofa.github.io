@@ -11,12 +11,24 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("nav-box-shadow");
   }
 });
-
+const main = document.getElementsByTagName("main")[0];
+let clicked = false;
 menuIcon.addEventListener("click", () => {
   menuList.classList.toggle("hidden");
+
+  if (clicked) {
+    main.style.paddingTop = "110px";
+    main.style.transition = "ease-in-out 0.3s";
+    menuIcon.style.transform = "rotate(0deg)";
+  } else {
+    menuIcon.style.transform = "rotate(90deg)";
+    main.style.paddingTop = "230px";
+    main.style.transition = "ease-in-out 0.3s";
+  }
+  clicked = !clicked;
 });
 
 // const btnContact = document.getElementsByClassName(".btn-contatct")[0];
 // btnContact.addEventListener("click", ()=>{
-  
+
 // });
