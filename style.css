@@ -193,7 +193,7 @@ main {
   nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 5px 15px;
+    padding: 15px 15px 0px 15px;
   }
   nav ul {
     flex-direction: column;
@@ -202,17 +202,23 @@ main {
     gap: 10px;
     transition: ease-in-out 0.2s;
   }
+  i{
+    display: flex;
+    height: 28px;
+  }
 
   .menu-icon {
-    font-size: 24px;
-    height: 28px;
+    font-size: 28px;
+    /* align-items: center; */
+    height: 30px;
+    padding: 0px 22px;
     display: flex;
     color: var(--success);
     cursor: pointer;
     transition: ease-in-out 0.3s;
   }
+
   .hidden {
-    transition: ease-in-out 0.2s;
     visibility: hidden;
     padding-top: 0px;
     opacity: 0;
