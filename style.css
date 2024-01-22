@@ -217,6 +217,7 @@ main {
     padding-top: 0px;
     opacity: 0;
     gap: 0px;
+    font-size: 0px;
   }
 
   .img-ava {
@@ -252,7 +253,7 @@ main {
 
   .row {
     flex-direction: column-reverse;
-    padding: 10px 20px;
+    padding: 5px 20px;
   }
 
   .social-media {
